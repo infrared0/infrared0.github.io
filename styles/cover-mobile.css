@@ -1,0 +1,237 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #e3e9ee;
+  /*background: url("../img/bkgd.jpg") no-repeat center center fixed;*/
+  /*background-size: cover;*/
+}
+
+body {
+/*  color: #fff; */
+  color: #333;
+  text-align: center;
+  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5); 
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+  /* 
+   * Extra styles
+   */
+
+/* accordion links */
+.accordion-link {
+  color: #C70039;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.5rem;
+}
+
+/* within accordion bkgd */
+.accordion-content {
+  background-color: #e3e9ee;
+/*  background-color: rgba(255,255,255,.4); */
+  text-align: left;
+  padding: 0.5rem 1rem;
+}
+
+.accordion-content .themes {
+  color: #333;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.5rem;
+  text-align: center;
+/*  text-shadow: 0 .05rem .1rem rgba(255,255,255,.5); */
+}
+
+/* within accordion header */
+.accordion-content .title {
+  color: #333;
+  font-family: 'Indie Flower', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* within accordion desc */
+.accordion-content .description {
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+/* within accordion papers */
+.accordion-content .paper {
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+/* within accordion coursework */
+.accordion-content .coursework {
+  color: #333;
+  font-family: 'Indie Flower', sans-serif;
+  font-size: 1.3rem;
+}
+
+/* within accordion hobbies */
+.accordion-content .hobbies {
+  color: #333;
+  font-family: 'Indie Flower', sans-serif;
+  font-size: 1.3rem;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  /*box-shadow: inset 0 0 5rem rgba(0,0,0,.5);*/
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 2rem;
+}
+
+
+/*
+ * Header
+ */
+
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  font-size: 1em;
+  color: rgba(51, 51, 51, 1);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255,255,255,.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 40em) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: relative;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+
+/* Custom vertical align, was vertical-align: middle */
+
+  .site-wrapper-inner {
+    top: 0;
+    width: 100%;
+    position: relative;
+  }
+
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 62em) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 42rem;
+  }
+
+}
+
