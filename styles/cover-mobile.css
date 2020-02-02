@@ -6,7 +6,7 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: #C70039;
 }
 
 /* Custom default button */
@@ -157,8 +157,8 @@ body {
 }
 
 .nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
+  color: #C70039;
+  border-bottom-color: #C70039;
 }
 
 @media (min-width: 48em) {
